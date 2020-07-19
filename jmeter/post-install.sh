@@ -1,15 +1,9 @@
 #!/bin/bash
-id > /tmp/install.log
-echo "=== 1 ===" >> /tmp/install.log
 apt update >> /tmp/install.log 2>&1
-echo "=== 2 ===" >> /tmp/install.log
 apt upgrade -y >> /tmp/install.log 2>&1
 apt update >> /tmp/install.log 2>&1
-echo "=== 3 ===" >> /tmp/install.log
 apt install -y openjdk-8-jre-headless >> /tmp/install.log 2>&1
-echo "=== 4 ===" >> /tmp/install.log
 apt install -y nload >> /tmp/install.log 2>&1
-echo "=== 5 ===" >> /tmp/install.log
 apt install -y htop >> /tmp/install.log 2>&1
 sed -i "2i20.193.42.119 gal.frishit.com" /etc/hosts
 
