@@ -1,5 +1,6 @@
 #!/bin/bash
-apt-get update > /tmp/install.log 2>&1
+apt update > /tmp/install.log 2>&1
+apt upgrade -y >> /tmp/install.log 2>&1
 apt-get install -y openjdk-8-jre-headless >> /tmp/install.log 2>&1
 apt-get install -y nload >> /tmp/install.log 2>&1
 apt-get install -y htop >> /tmp/install.log 2>&1
