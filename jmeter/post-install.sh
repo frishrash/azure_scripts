@@ -1,6 +1,8 @@
 #!/bin/bash
-apt-get update
-apt-get install -y htop nload openjdk-8-jre-headless > /tmp/install.logs 2>&1
+apt-get update > /tmp/install.log 2>&1
+apt-get install -y openjdk-8-jre-headless >> /tmp/install.log 2>&1
+apt-get install -y nload >> /tmp/install.log 2>&1
+apt-get install -y htop >> /tmp/install.log 2>&1
 sed -i "2i20.193.42.119 gal.frishit.com" /etc/hosts
 
 cd /home/secupi
