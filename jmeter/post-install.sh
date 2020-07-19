@@ -4,6 +4,7 @@ echo "=== 1 ===" >> /tmp/install.log
 apt update >> /tmp/install.log 2>&1
 echo "=== 2 ===" >> /tmp/install.log
 apt upgrade -y >> /tmp/install.log 2>&1
+apt upgrade >> /tmp/install.log 2>&1
 echo "=== 3 ===" >> /tmp/install.log
 apt-get install -y openjdk-8-jre-headless >> /tmp/install.log 2>&1
 echo "=== 4 ===" >> /tmp/install.log
