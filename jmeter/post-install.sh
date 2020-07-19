@@ -1,5 +1,5 @@
 #!/bin/bash
-apt-get update && sudo apt-get install -y htop nload openjdk-8-jre-headless
+apt-get update && apt-get install -y htop nload openjdk-8-jre-headless
 sed -i "2i20.193.42.119 gal.frishit.com" /etc/hosts
 
 cd /home/secupi
